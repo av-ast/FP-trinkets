@@ -14,3 +14,6 @@ self_test =
       list = replicate 1000000 expr
         where
           expr = map (^2) [1..5] == my_map (^2) [1..5]
+
+main = do
+  print self_test
